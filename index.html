@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Online Bookstore</title>
+    <link rel="stylesheet" href="style.css" >
+</head>
+<body>
+    <header>
+        
+        <nav>
+            <a href="index.html" class="logo">Book Inventory</a>
+            <div>
+                <ul>
+                    <li>
+                        <a href="index.html" class="active">
+                            Home
+                        </a>
+                    </li>
+                    <li><a href="#books-list">Books</a></li>
+                    <li><a href="#contact-form">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div id="hero-section">
+            <div>
+                <h1>Welcome to My Online Bookstore</h1>
+                <p>Explore our extensive collection of books across various genres.
+                    Enjoy seamless shopping <br> and discover your next great read today</p>
+                <button> <a href="#books-list">Explore Books</a></button>
+            </div>
+        </div>
+
+    </header>
+
+    <section id="featured-books">
+        <h2>Featured Books</h2>
+        <img src="featured-books.jpg" alt="featured-books" width="90%">
+        <table id="books-list">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>100</td>
+                    <td>The Great Gatsby</td>
+                    <td>F. Scott Fitzgerald</td>
+                    <td>$10.99</td>
+                </tr>
+                <tr>
+                    <td>200</td>
+                    <td>To Kill a Mockingbird</td>
+                    <td>Harper Lee</td>
+                    <td>$12.49</td>
+                </tr>
+                <tr>
+                    <td>300</td>
+                    <td>1984 The Great</td>
+                    <td>George Orwell</td>
+                    <td>$9.95</td>
+                </tr>
+                <tr>
+                    <td>400</td>
+                    <td>The Great Gatsby</td>
+                    <td>F. Scott Fitzgerald</td>
+                    <td>$10.99</td>
+                </tr>
+                <tr>
+                    <td>500</td>
+                    <td>To Kill a Mockingbird</td>
+                    <td>Harper Lee</td>
+                    <td>$12.49</td>
+                </tr>
+                <tr>
+                    <td>600</td>
+                    <td>The Creature End</td>
+                    <td>George Orwell</td>
+                    <td>$9.95</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="customer-reviews-section">
+        <h2>Customer Reviews</h2>
+        <div id="customer-reviews">
+            <div class="review">
+                <h3>John Doe</h3>
+                <p>"Great selection of books! I found exactly what I was looking for. The website was easy to navigate, and checkout was a breeze. My order arrived promptly, and the books were in excellent condition. I will definitely shop here again."</p>
+            </div>
+            <div class="review">
+                <h3>Jane Smith</h3>
+                <p>"Excellent customer service and fast delivery. I had a question about a book and received a quick response from their support team. The package arrived sooner than expected, and the books were securely packaged. Highly recommended!"</p>
+            </div>
+            <div class="review">
+                <h3>Michael Johnson</h3>
+                <p>"Love the easy navigation and user-friendly interface. The search feature helped me quickly find the specific genres I was interested in. Placing an order was straightforward, and I received updates about my shipment. A great online bookstore experience!"</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="about-us">
+        <h2>About Us</h2>
+        <div class="about-content">
+            <p>Welcome to My Online Bookstore, your one-stop destination for all things books! We are passionate about literature and strive to bring you a wide selection of books across various genres. Whether you're looking for classic novels, contemporary bestsellers, or niche literature, we've got you covered. If you're a book lover, isn't it a nice thing? <br><br>
+            Our mission is to provide an exceptional online shopping experience with easy navigation, secure transactions, and prompt delivery. We believe in fostering a community of readers and book lovers, where everyone can find their next favorite read. <br> <br>
+            Explore our curated collections, browse through our featured books, and enjoy personalized recommendations based on your interests. We are committed to serving you with the best in books and customer service.</p>
+        </div>
+    </section>
+
+    <section id="contact-form">
+        <h2>Contact Us</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 My Online Bookstore</p>
+    </footer>
+
+</body>
+</html>
