@@ -1,0 +1,184 @@
+[
+  {
+    "id": "100",
+    "title": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "description": "A novel about the serious issues of rape and racial inequality narrated by the young Scout Finch.",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": "101",
+    "title": "1984",
+    "author": "George Orwell",
+    "description": "A dystopian novel set in a totalitarian society under constant surveillance.",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": "102",
+    "title": "Pride and Prejudice",
+    "author": "Jane Austen",
+    "description": "A romantic novel that also critiques the British landed gentry at the end of the 18th century.",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": "103",
+    "title": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "description": "A novel about the American dream and the disillusionment that came with it during the Jazz Age.",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": "104",
+    "title": "Moby Dick",
+    "author": "Herman Melville",
+    "description": "The narrative of Captain Ahab's obsessive quest to kill the giant white whale, Moby Dick.",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": "105",
+    "title": "War and Peace",
+    "author": "Leo Tolstoy",
+    "description": "A historical novel that chronicles the French invasion of Russia and its impact on Tsarist society.",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": "106",
+    "title": "The Catcher in the Rye",
+    "author": "J.D. Salinger",
+    "description": "A story about teenage rebellion and angst narrated by the cynical Holden Caulfield.",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": "107",
+    "title": "The Lord of the Rings",
+    "author": "J.R.R. Tolkien",
+    "description": "An epic fantasy novel about the quest to destroy the One Ring and defeat Sauron.",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": "108",
+    "title": "Animal Farm",
+    "author": "George Orwell",
+    "description": "A satirical allegory of Soviet totalitarianism in the form of a farm animal uprising.",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": "109",
+    "title": "Jane Eyre",
+    "author": "Charlotte Brontë",
+    "description": "The story of a young orphaned girl’s life and her growth into adulthood.",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": "110",
+    "title": "Brave New World",
+    "author": "Aldous Huxley",
+    "description": "A dystopian novel set in a futuristic world where society is controlled by technology and conditioning.",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": "111",
+    "title": "Wuthering Heights",
+    "author": "Emily Brontë",
+    "description": "A tragic love story set on the Yorkshire moors featuring the characters Heathcliff and Catherine.",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": "112",
+    "title": "The Odyssey",
+    "author": "Homer",
+    "description": "An epic poem that follows the Greek hero Odysseus on his journey home after the Trojan War.",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": "113",
+    "title": "Crime and Punishment",
+    "author": "Fyodor Dostoevsky",
+    "description": "A psychological drama about the moral dilemmas faced by a destitute student who commits a murder.",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": "114",
+    "title": "The Brothers Karamazov",
+    "author": "Fyodor Dostoevsky",
+    "description": "A philosophical novel exploring faith, doubt, and the familial relationships among the Karamazov brothers.",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": "115",
+    "title": "The Hobbit",
+    "author": "J.R.R. Tolkien",
+    "description": "A fantasy novel about the adventures of Bilbo Baggins, a hobbit who embarks on an unexpected journey.",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": "116",
+    "title": "Anna Karenina",
+    "author": "Leo Tolstoy",
+    "description": "A tragic story of love and infidelity set against the backdrop of Russian society.",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": "117",
+    "title": "Great Expectations",
+    "author": "Charles Dickens",
+    "description": "The story of the orphan Pip and his growth and personal development through life.",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": "118",
+    "title": "One Hundred Years of Solitude",
+    "author": "Gabriel García Márquez",
+    "description": "A multi-generational story of the Buendía family, set in the fictional town of Macondo.",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": "119",
+    "title": "Ulysses",
+    "author": "James Joyce",
+    "description": "A modernist novel that parallels the adventures of Ulysses in Homer’s epic poem.",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": "120",
+    "title": "Madame Bovary",
+    "author": "Gustave Flaubert",
+    "description": "The story of Emma Bovary's quest for romantic fulfillment and her ultimate downfall.",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": "121",
+    "title": "The Divine Comedy",
+    "author": "Dante Alighieri",
+    "description": "An epic poem describing the author’s journey through Hell, Purgatory, and Paradise.",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": "122",
+    "title": "Don Quixote",
+    "author": "Miguel de Cervantes",
+    "description": "The story of a nobleman who becomes a self-styled knight and his adventures with his squire.",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": "123",
+    "title": "The Iliad",
+    "author": "Homer",
+    "description": "An epic poem recounting the significant events of the final weeks of the Trojan War.",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": "124",
+    "title": "Frankenstein",
+    "author": "Mary Shelley",
+    "description": "A novel about a young scientist who creates a sapient creature in an unorthodox experiment.",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": "125",
+    "title": "Dracula",
+    "author": "Bram Stoker",
+    "description": "A gothic horror novel about the vampire Count Dracula's attempt to move from Transylvania to England.",
+    "image": "https://via.placeholder.com/150"
+  }
+]
