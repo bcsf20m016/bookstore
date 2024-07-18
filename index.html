@@ -3,6 +3,7 @@
 <head>
     <title>My Online Bookstore</title>
     <link rel="stylesheet" href="style.css" >
+    <!--jQuery Code is written just before the </body> tag-->
 </head>
 <body>
     <header>
@@ -35,55 +36,25 @@
 
     <section id="featured-books">
         <h2>Featured Books</h2>
-        <img src="featured-books.jpg" alt="featured-books" width="90%">
+        <img src="featured-books.jpg" alt="featured-books" width="90%" id="featured-books-image">
+        <div id="search-div">
+            <label for="search-book" id="search-label">Search Book: </label>
+            <input type="text" id="search-book" placeholder="Enter book title">
+        </div>
         <table id="books-list">
             <thead>
                 <tr>
                     <th>ID</th>
+                    <th>Image</th>
                     <th>Title</th>
                     <th>Author</th>
-                    <th>Price</th>
+                    <th>Description</th>
                 </tr>
             </thead>
-            <tbody>
-                <tr>
-                    <td>100</td>
-                    <td>The Great Gatsby</td>
-                    <td>F. Scott Fitzgerald</td>
-                    <td>$10.99</td>
-                </tr>
-                <tr>
-                    <td>200</td>
-                    <td>To Kill a Mockingbird</td>
-                    <td>Harper Lee</td>
-                    <td>$12.49</td>
-                </tr>
-                <tr>
-                    <td>300</td>
-                    <td>1984 The Great</td>
-                    <td>George Orwell</td>
-                    <td>$9.95</td>
-                </tr>
-                <tr>
-                    <td>400</td>
-                    <td>The Great Gatsby</td>
-                    <td>F. Scott Fitzgerald</td>
-                    <td>$10.99</td>
-                </tr>
-                <tr>
-                    <td>500</td>
-                    <td>To Kill a Mockingbird</td>
-                    <td>Harper Lee</td>
-                    <td>$12.49</td>
-                </tr>
-                <tr>
-                    <td>600</td>
-                    <td>The Creature End</td>
-                    <td>George Orwell</td>
-                    <td>$9.95</td>
-                </tr>
+            <tbody id="books-details">
             </tbody>
         </table>
+        <button id="load-more">Load More Books</button>
     </section>
 
     <section id="customer-reviews-section">
@@ -139,5 +110,100 @@
         <p>&copy; 2024 My Online Bookstore</p>
     </footer>
 
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+
+        var booksData = [];
+        var buttonClicked = 0; //Maintaining count of 'Load More Books' Button clicks
+
+        $(document).ready(function (){
+
+            //Now, fetching books data through API call
+            $.ajax({
+                url: 'books.json',
+                method: 'GET',
+                dataType: 'json',
+                success: function(data){
+                    booksData = data;
+                    let end = 10;
+                    if(end >= booksData.length)
+                    {
+                        end = booksData.length - 1;
+                    }
+                    loadTableData(booksData.slice(0, end));
+                },
+                error: function(error){
+                    alert('There is an error while loading data from JSON file');
+                }
+            });
+
+            //Adding a click listener on Load More Books Button
+            $('#load-more').click(function(){
+                buttonClicked++;
+                let start = 10*buttonClicked;
+                let end = start + 10;
+                if(start < booksData.length) //index checking
+                {
+                    if(end >= booksData.length)
+                    {
+                        end = booksData.length;
+                    }
+                    loadTableData(booksData.slice(start, end));
+                }
+                else
+                {
+                    $('#load-more').prop('disabled', true);
+                    $('#load-more').css({'cursor': 'not-allowed'});
+                }
+            });
+
+            //Handling Book Search functionality in real-time
+            $('#search-book').on('input', function(){
+                let searchTitle = $(this).val().toLowerCase();
+                filterBooks(searchTitle);
+            });
+
+        });
+
+        //Following function will load data into table
+        function loadTableData(books)
+        {
+            books.forEach(book => {
+                let tableRow = `<tr> <td>${book.id}</td> <td> <img src="${book.image}" alt="${book.title}" width="250"> </td> <td>${book.title}</td> <td>${book.author}</td> <td>${book.description}</td> </tr>`;
+                $('#books-details').append(tableRow);
+            });
+        }
+
+        //This function will filter books based on the search term
+        function filterBooks(searchTerm)
+        {
+            if(searchTerm != "")
+            {
+                var filteredBooks = booksData.filter(book => book.title.toLowerCase().includes(searchTerm));
+                $('#books-details').empty();
+                loadTableData(filteredBooks);
+                //disabling load more button
+                $('#load-more').prop('disabled', true);
+                $('#load-more').css({'cursor': 'not-allowed'});
+            }
+            else
+            {
+                buttonClicked = 0;
+                let end = 10;
+                if(end >= booksData.length)
+                {
+                    end = booksData.length;
+                }
+                $('#books-details').empty();
+                loadTableData(booksData.slice(0, end));
+                //enabling load more button
+                $('#load-more').prop('disabled', false);
+                $('#load-more').css({'cursor': 'pointer'});
+            }
+
+        }
+
+    </script>
 </body>
 </html>
